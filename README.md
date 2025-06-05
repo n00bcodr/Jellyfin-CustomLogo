@@ -1,17 +1,8 @@
-# Jellyfin Custom Logo Plugin
+# Jellyfin Custom Logo
 
-This plugin allows you to replace the default Jellyfin logo with your own custom image via an upload interface.
+This plugin allows you to replace the default Jellyfin logos.
 
-## 📦 Features
-
-- Upload a custom logo image through the Jellyfin dashboard.
-- Automatically replaces default Jellyfin logos.
-- Compatible with Jellyfin 10.11.0 and above.
-
----
-# Jellyfin Custom Logo Plugin
-
-This plugin allows you to replace the default Jellyfin logo with your own custom image via an upload interface.
+[Voir la version française](https://raw.githubusercontent.com/ImLacy/Jellyfin-CustomLogo/refs/heads/main/README_FR.md)
 
 ---
 
@@ -26,9 +17,10 @@ This plugin allows you to replace the default Jellyfin logo with your own custom
 1. Go to `Plugins` > `Repositories`.
 2. Click on `+` to add a new repository.
 3. Enter the following details:
+    - Add a name
     - **URL:**
       ```
-      https://raw.githubusercontent.com/bvolvy/CustomLogoPlugin/main/manifest.json
+      https://raw.githubusercontent.com/ImLacy/Jellyfin-CustomLogo/refs/tags/1.0.0/manifest.json
       ```
 4. Click **Save**.
 
@@ -38,9 +30,7 @@ This plugin allows you to replace the default Jellyfin logo with your own custom
 - Find **Custom Logo** in the list.
 - Click **Install**.
 
-### Restart Jellyfin:
-
-- After installation, restart your Jellyfin server to apply changes.
+Restart Jellyfin
 
 ---
 
@@ -53,17 +43,16 @@ This plugin allows you to replace the default Jellyfin logo with your own custom
 ### Upload Logo:
 
 - Use the provided interface to upload your custom logo image.
-- Ensure the image is in **PNG format** for best compatibility.
 
-### Apply Changes:
+⚠️ Ensure the image is in **PNG format**.
 
-- After uploading, the plugin will handle replacing the default Jellyfin logos with your custom image.
+- Save
 ---
 
 ## Troubleshooting
 
 ## The logo doesn't change
-Try to clear your browers cache
+Try to clear your browsers cache
 
 Firefox : https://support.mozilla.org/en-US/kb/how-clear-firefox-cache
 Chrome : https://support.google.com/accounts/answer/32050?hl=en&co=GENIE.Platform%3DDesktop
