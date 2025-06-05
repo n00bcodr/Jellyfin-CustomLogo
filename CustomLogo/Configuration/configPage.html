@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Custom Logo</title>
+</head>
+<body>
+    <div id="TemplateConfigPage" data-role="page" class="page type-interior pluginConfigurationPage" data-require="emby-input,emby-button,emby-select,emby-checkbox">
+        <div data-role="content">
+            <div class="content-primary">
+                <form id="TemplateConfigForm" method="POST" action="/logo/upload" enctype="multipart/form-data">
+                    <div class="inputContainer">
+                        <h1>Upload customs logos</h1>
+                        <label class="inputLabel inputLabelUnfocused" for="logo">Upload your custom logo</label>
+                        <input id="Logo" name="Logo" type="file" accept="image/png" is="emby-input" />
+                        <label class="inputLabel inputLabelUnfocused" for="logo">Upload your custom banner, for home page (dark mode)</label>
+                        <input id="BannerLight" name="BannerLight" type="file" accept="image/png" is="emby-input" />
+                        <label class="inputLabel inputLabelUnfocused" for="logo">Upload your custom banner, for home page (light mode)</label>
+                        <input id="BannerDark" name="BannerDark" type="file" accept="image/png" is="emby-input" />
+                    </div>
+                    <div>
+                        <button is="emby-button" type="submit" class="raised button-submit block emby-button">
+                            <span>Save</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

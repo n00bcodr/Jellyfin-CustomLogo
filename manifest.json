@@ -1,0 +1,20 @@
+[
+  {
+    "guid": "eb5d7894-8eef-4b36-aa6f-5d124e828ce1",
+    "name": "CustomLogo",
+    "description": "Add the abiliy to replace the Jellyfin logo",
+    "owner": "Lacy",
+    "category": "General",
+    "imageUrl": "https://github.com/ImLacy/Jellyfin-CustomLogo/blob/main/logo.png?raw=true",
+    "versions": [
+      {
+        "version": "1.0.0",
+        "changelist": "TODO",
+        "targetAbi": "10.10.7.0",
+        "sourceUrl": "https://github.com/ImLacy/Jellyfin-CustomLogo/releases/download/1.0.0/CustomLogo.zip",
+        "checksum": "6966DCC632D634959C37465445002AB7",
+        "timestamp": "2025-06-05T13:58:00"
+      }
+    ]
+  }
+]
