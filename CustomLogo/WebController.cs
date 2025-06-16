@@ -24,10 +24,11 @@ namespace CustomLogo
             var bannerLight = Request.Form.Files["BannerLight"];
 
             if (logo != null && logo.Length > 0) {
-                var path = Path.Combine(_appPaths.WebPath, "assets/img/icon-transparent.png");
-                using (var stream = new FileStream(path, FileMode.Create))
-                {
-                    await logo.CopyToAsync(stream);
+                if (System.IO.File.Exists(_appPaths.WebPath + "assets/img/icon-transparent.png")) {
+                    var path = Path.Combine(_appPaths.WebPath, "assets/img/icon-transparent.png");
+                    using (var stream = new FileStream(path, FileMode.Create)) {
+                        await logo.CopyToAsync(stream);
+                    }
                 }
 
                 string[] files = Directory.GetFiles(_appPaths.WebPath, "icon-transparent*", SearchOption.AllDirectories);
@@ -42,10 +43,11 @@ namespace CustomLogo
             }
 
             if (bannerDark != null && bannerDark.Length > 0) {
-                var path = Path.Combine(_appPaths.WebPath, "assets/img/banner-dark.png");
-                using (var stream = new FileStream(path, FileMode.Create))
-                {
-                    await bannerDark.CopyToAsync(stream);
+                if (System.IO.File.Exists(_appPaths.WebPath + "assets/img/banner-dark.png")) {
+                    var path = Path.Combine(_appPaths.WebPath, "assets/img/banner-dark.png");
+                    using (var stream = new FileStream(path, FileMode.Create)) {
+                        await logo.CopyToAsync(stream);
+                    }
                 }
 
                 string[] files = Directory.GetFiles(_appPaths.WebPath, "banner-dark*", SearchOption.AllDirectories);
@@ -60,10 +62,11 @@ namespace CustomLogo
             }
 
             if (bannerLight != null && bannerLight.Length > 0) {
-                var path = Path.Combine(_appPaths.WebPath, "assets/img/banner-light.png");
-                using (var stream = new FileStream(path, FileMode.Create))
-                {
-                    await bannerLight.CopyToAsync(stream);
+                if (System.IO.File.Exists(_appPaths.WebPath + "assets/img/banner-light.png")) {
+                    var path = Path.Combine(_appPaths.WebPath, "assets/img/banner-light.png");
+                    using (var stream = new FileStream(path, FileMode.Create)) {
+                        await logo.CopyToAsync(stream);
+                    }
                 }
 
                 string[] files = Directory.GetFiles(_appPaths.WebPath, "banner-light*", SearchOption.AllDirectories);
@@ -77,7 +80,9 @@ namespace CustomLogo
                 }
             }
 
-            return Ok(new { message = "Success" });
+            return Content(
+                "<html><head><meta http-equiv='refresh' content='0;url=/web/#/dashboard/plugins' /></head><body>Redirection...</body></html>",
+                "text/html");
         }
     }
 }
