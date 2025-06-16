@@ -17,7 +17,7 @@ Ce plugin vous permets de customiser le logo de Jellyfin
     - Ajouter un nom
     - **URL:**
       ```
-      https://raw.githubusercontent.com/ImLacy/Jellyfin-CustomLogo/refs/tags/1.0.1/manifest.json
+      https://raw.githubusercontent.com/ImLacy/Jellyfin-CustomLogo/refs/heads/main/manifest.json
       ```
 4. Cliquez sur **Sauvegarder**.
 
