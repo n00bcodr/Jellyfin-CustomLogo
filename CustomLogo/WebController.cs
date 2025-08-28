@@ -55,7 +55,7 @@ namespace CustomLogo
                         var path = Path.Combine(_appPaths.WebPath, "assets/img/banner-dark.png");
                         using (var stream = new FileStream(path, FileMode.Create))
                         {
-                            await logo.CopyToAsync(stream);
+                            await bannerDark.CopyToAsync(stream);
                         }
                     }
 
@@ -77,7 +77,7 @@ namespace CustomLogo
                         var path = Path.Combine(_appPaths.WebPath, "assets/img/banner-light.png");
                         using (var stream = new FileStream(path, FileMode.Create))
                         {
-                            await logo.CopyToAsync(stream);
+                            await bannerLight.CopyToAsync(stream);
                         }
                     }
 
