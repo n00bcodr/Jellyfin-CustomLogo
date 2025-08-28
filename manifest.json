@@ -8,6 +8,14 @@
     "imageUrl": "https://github.com/ImLacy/Jellyfin-CustomLogo/blob/main/logo.png?raw=true",
     "versions": [
       {
+        "version": "1.1.0.0",
+        "changelist": "Better redirection after configuration",
+        "targetAbi": "10.10.7.0",
+        "sourceUrl": "https://github.com/n00bcodr/Jellyfin-CustomLogo/releases/download/1.1.0.0/CustomLogo.zip",
+        "checksum": "1734e43eefb69592ccfbf7e86d31d0e6",
+        "timestamp": "2025-08-20T13:50:00"
+      },
+      {
         "version": "1.0.1",
         "changelist": "Better redirection after configuration",
         "targetAbi": "10.10.7.0",
